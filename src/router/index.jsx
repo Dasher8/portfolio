@@ -14,13 +14,11 @@ export default function Router() {
   return (
   <React.StrictMode>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<Project />} />
           <Route path="*" element={<Error/>}/>
         </Routes>
-        <Footer />
       </BrowserRouter>
   </React.StrictMode>
   );

@@ -11,7 +11,65 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  max-width: 1240px;
+}
 
+.page-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: row;
+padding: 20px;
+}
+
+.about-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.page-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.outils-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.outil {
+  width: calc(80% / 3 - 70px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(186, 180, 180, 0.2);
+}
+
+svg {
+font-size: 50px;
+padding: 20px;
+}
 
 a {
   text-decoration: none;

@@ -1,6 +1,7 @@
 import React from "react";
 import LayoutDefault from "../../layouts/default/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Projects from "../../containers/projects";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="projects"></section>
+      <Projects/>
     </LayoutDefault>
   );
 }

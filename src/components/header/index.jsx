@@ -21,7 +21,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink to="#projects" className="active-link">
-              Projects
+              Projets
             </NavLink>
           </li>
         </ul>

@@ -26,6 +26,12 @@ body {
   margin: 0;
   padding: 20px 40px;
 }
+
+.banner-img {
+  width: 60%;
+  height: 50%;
+}
+
 ul {
   list-style: none;
   display: flex;

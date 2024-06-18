@@ -45,8 +45,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="projects"></section>
+      <section id="projects" className="projects">
       <Projects/>
+      </section>
     </LayoutDefault>
   );
 }

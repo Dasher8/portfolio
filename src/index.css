@@ -1,7 +1,7 @@
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(44, 62, 80);
 }
 
 body {
@@ -12,7 +12,31 @@ body {
 }
 
 .header {
-  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.logo-text {
+  font-family: "Helvetica";
+  margin: 0;
+  padding: 20px 40px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 30px;
+}
+
+li {
+  padding: 20px 40px;
+  font-weight: 600;
 }
 
 .page-content {
@@ -69,11 +93,16 @@ padding: 20px;
 svg {
 font-size: 50px;
 padding: 20px;
+color: rgb(44, 62, 80);
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.active-link:hover {
+  text-decoration: underline;
 }
 
 .footer {

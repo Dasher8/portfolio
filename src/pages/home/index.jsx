@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Home() {
   return (
     <LayoutDefault page="home">
-      <section className="about">
+      <section id="about" className="about">
         <div className="about-text">
           <h1>Frontend dev</h1>
           <p>
@@ -16,7 +16,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="outils">
+      <section id="outils" className="outils">
         <div className="outils-container">
           <div className="outil">
             <FontAwesomeIcon icon="fa-brands fa-react outil-icon" />
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="projects"></section>
+      <section id="projects" className="projects"></section>
     </LayoutDefault>
   );
 }

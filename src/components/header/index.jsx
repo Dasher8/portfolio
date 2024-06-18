@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <h1 className="logo-text">Daria Topor</h1>
+        <h1 className="logo-text">Portfolio</h1>
       </div>
       <nav>
         <ul>

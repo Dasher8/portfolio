@@ -1,9 +1,21 @@
 import React from "react";
 import LayoutDefault from "../../layouts/default/index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Outil from "../../components/outil";
+import { faReact, faJs, faHtml5, faCss3Alt, faSass, faGithub, faGit, faFigma } from "@fortawesome/free-brands-svg-icons";
 import Projects from "../../containers/projects";
 
 export default function Home() {
+
+  const icons = [
+    { icon: faReact, className: "react-icon" },
+    { icon: faJs, className: "js-icon" },
+    { icon: faHtml5, className: "html5-icon" },
+    { icon: faCss3Alt, className: "css3-icon" },
+    { icon: faSass, className: "sass-icon" },
+    { icon: faGithub, className: "github-icon" },
+    { icon: faGit, className: "git-icon" },
+    { icon: faFigma, className: "figma-icon" },
+  ];
   return (
     <LayoutDefault page="home">
       <section id="about" className="about">
@@ -18,31 +30,11 @@ export default function Home() {
         </div>
       </section>
       <section id="outils" className="outils">
+        <h2>Outils</h2>
         <div className="outils-container">
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-react outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-js outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-html5 outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-css3-alt outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-sass outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-github outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-git outil-icon" />
-          </div>
-          <div className="outil">
-            <FontAwesomeIcon icon="fa-brands fa-figma outil-icon" />
-          </div>
+        {icons.map((icon, index) => (
+          <Outil key={index} icon={icon.icon} className={icon.className} />
+        ))}
         </div>
       </section>
       <section id="projects" className="projects">

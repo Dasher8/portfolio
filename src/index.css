@@ -21,6 +21,7 @@ body {
   padding: 0;
 }
 .logo-text {
+  font-size: 30px;
   font-family: "Helvetica";
   margin: 0;
   padding: 20px 40px;
@@ -49,6 +50,7 @@ li {
   flex-direction: column;
 }
 .about {
+  max-width: 1000px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

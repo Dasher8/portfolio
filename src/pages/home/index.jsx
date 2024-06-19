@@ -38,6 +38,7 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="projects">
+        <h2>Projets</h2>
       <Projects/>
       </section>
     </LayoutDefault>

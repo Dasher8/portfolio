@@ -1,12 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className="header">
+      <Link to="/">
       <div className="logo">
         <h1 className="logo-text">Portfolio</h1>
       </div>
+      </Link>
       <nav>
         <ul>
           <li>

@@ -6,25 +6,25 @@ import Banner from "../../components/banner";
 import src from "../../assets/mockup_devices.png";
 import "../../index.css";
 export default function Argent() {
-
-      // Select the project with id "1"
+  // Select the project with id "1"
   const projectId = "1";
-  const project = projects.data.find(proj => proj.id === projectId);
+  const project = projects.data.find((proj) => proj.id === projectId);
 
   // Check if the project exists
   if (!project) {
     return <div>Project not found</div>;
   }
-    return (
-       <LayoutDefault>
-   <Banner src={src}/>
-   <Description
-        alt={project.title}
-        title={project.title}
-        context={project.context}
-        tags={project.tags}
-      />
-
-       </LayoutDefault>
-    )
+  return (
+    <LayoutDefault>
+      <main className="main-argent">
+        <Banner src={src} />
+        <Description
+          alt={project.title}
+          title={project.title}
+          context={project.context}
+          tags={project.tags}
+        />
+      </main>
+    </LayoutDefault>
+  );
 }

@@ -5,12 +5,12 @@ import Footer from "../../components/footer";
 
 import "../../../src/index.css";
 
-export default function LayoutDefault({ page, children }) {
+export default function LayoutDefault({ children }) {
   return (
-    <div className={`page page-${page}`}>
+    <>
       <Header />
-      <div className={"page-content"}>{children}</div>
+      {children}
       <Footer />
-    </div>
+    </>
   );
 }

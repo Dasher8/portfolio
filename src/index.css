@@ -12,16 +12,14 @@ body {
 }
 
 .main-home {
-  width: 100%;
-  max-width: 1240px;
+  margin: 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .main-argent {
-  width: 100%;
-  max-width: 1240px;
+  margin: 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +63,7 @@ li {
 
 .page-content {
   width: 100%;
-  max-width: 1400px;
+
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -202,6 +200,7 @@ a {
 }
 
 .about-project {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -216,7 +215,6 @@ a {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  position: relative;
 }
 .title-about-project-link {
   font-size: 36px;
@@ -226,6 +224,8 @@ a {
 
 .context {
   text-align: left;
+  line-height: 1.5;
+  white-space: pre-line;
 }
 
 .title-about-project-link:hover {
@@ -241,19 +241,31 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 20px 0;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
 
 .tags-list {
+  width: 100%;
+  max-width: 1240px;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+li:last-child {
+  margin-right: 0;
+}
+
 .tag {
   max-width: 100%;
   height: 28px;
@@ -263,7 +275,7 @@ a {
   align-items: center;
   border-radius: 10px;
   box-sizing: border-box;
-  margin-right: 15px;
+  margin: 15px 15px 0 0;
   padding: 10px;
   background-color: rgba(186, 180, 180, 0.2);
 }

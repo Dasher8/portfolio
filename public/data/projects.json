@@ -5,7 +5,7 @@
         "id": "1",
 		"title": "Kasa",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-		"context": "Pour Kasa, un leader français de la location d'appartements entre particuliers, j'ai participé à la refonte complète de leur site web en utilisant React et NodeJS. J'ai développé le front-end selon les maquettes Figma, en intégrant des composants React, des animations CSS, et en initialisant l'application avec Create React App. J'ai configuré la navigation entre les pages avec React Router et stylisé l'interface avec Sass. Ce projet a démontré ma capacité à gérer une refonte complète et à travailler efficacement avec des designs réactifs.",
+		"context": "Pour Kasa, un leader français de la location d'appartements entre particuliers, j'ai participé à la refonte complète de leur site web en utilisant React et NodeJS.\nJ'ai développé le front-end selon les maquettes Figma, en intégrant des composants React, des animations CSS, et en initialisant l'application avec Create React App.\nJ'ai configuré la navigation entre les pages avec React Router et stylisé l'interface avec Sass.\nCe projet a démontré ma capacité à gérer une refonte complète et à travailler efficacement avec des designs réactifs.",
 		"tags": [
             "Git",
             "CSS",
@@ -15,12 +15,12 @@
             "React",
             "Figma",
             "UI/UX",
+            "Router",
             "GitHub",
             "Node.js",
             "Animations",
             "JavaScript",
-            "React Router",
-            "Responsive Design"
+            "Responsive"
 		]
         },
         {
@@ -36,11 +36,11 @@
                 "SASS",
                 "Figma",
                 "GitHub",
+                "UX Design",
                 "Animations",
                 "JavaScript",
-                "UX Design",
-                "Mobile-first",
-                "Responsive Design"
+                "Responsive",
+                "Mobile-first"
             ]
             },
             {
@@ -60,7 +60,7 @@
                     "UX Design",
                     "Green Code",
                     "JavaScript",
-                    "Responsive Design"
+                    "Responsive"
                 ]
                 }
     ]

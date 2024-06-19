@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Description({ title, context, tags }) {
   return (
     <section className="projects-description-container">
-     
       <div className="about-project">
         <Link
           to="https://kasa-iota-flame.vercel.app"

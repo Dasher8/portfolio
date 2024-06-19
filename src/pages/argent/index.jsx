@@ -14,6 +14,7 @@ export default function Argent() {
   if (!project) {
     return <div>Project not found</div>;
   }
+
   return (
     <LayoutDefault>
       <main className="main-argent">

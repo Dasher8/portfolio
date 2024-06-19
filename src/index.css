@@ -4,6 +4,10 @@ html {
   color: rgb(44, 62, 80);
 }
 
+p, a, h1, h2, h3, li, span {
+  color: rgb(44, 62, 80);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -63,7 +67,6 @@ li {
 
 .page-content {
   width: 100%;
-
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -209,7 +212,7 @@ a {
 
 .projects-description-container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,8 +285,8 @@ li:last-child {
 
 .banner {
   width: 100%;
-  max-width: 1240px;
-  height: 500px;
+  max-width: 1400px;
+  height: 400px;
   display: flex;
   margin: 38px 0;
   padding: 0;
@@ -293,19 +296,19 @@ li:last-child {
 }
 .img-container {
   width: 100%;
-  max-width: 1240px;
-  height: 500px;
+  max-width: 1400px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
   box-sizing: border-box;
   position: relative;
-  box-shadow: 4px 4px 5px 4px rgb(0 0 0 / 0.1);
+  box-shadow: 4px 4px 5px 4px rgb(44 62 80 / 0.1);
 }
 .banner-img {
-  width: 60%;
-  height: 500px;
+  width: 40%;
+  height: 400px;
   object-fit: cover;
   position: absolute;
   border-radius: 25px;

@@ -7,13 +7,19 @@ export default function Footer() {
     <div className="footer">
       <div className="socials">
         <Link to="https://github.com/Dasher8">
-          <FontAwesomeIcon icon="fa-brands fa-github social-icon" />
+          <FontAwesomeIcon icon="fa-brands fa-github" className="social-icon" />
         </Link>
         <Link to="https://www.behance.net/dariatopor">
-          <FontAwesomeIcon icon="fa-brands fa-square-behance social-icon" />
+          <FontAwesomeIcon
+            icon="fa-brands fa-square-behance"
+            className="social-icon"
+          />
         </Link>
         <Link to="https://www.linkedin.com/in/dariatopor/">
-          <FontAwesomeIcon icon="fa-brands fa-linkedin social-icon" />
+          <FontAwesomeIcon
+            icon="fa-brands fa-linkedin"
+            className="social-icon"
+          />
         </Link>
       </div>
     </div>

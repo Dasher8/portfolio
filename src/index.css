@@ -140,6 +140,7 @@ a {
   object-fit: cover;
   position: relative;
   cursor: pointer;
+  background: rgba(186, 180, 180, 0.2);
 }
 .cover {
   width: 100%;

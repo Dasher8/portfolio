@@ -2,6 +2,8 @@ import React from "react";
 import LayoutDefault from "../../layouts/default";
 import projects from "../../../public/data/projects.json";
 import Description from "../../components/description";
+import Banner from "../../components/banner";
+import src from "../../assets/mockup_devices.png";
 import "../../index.css";
 export default function Argent() {
 
@@ -15,9 +17,8 @@ export default function Argent() {
   }
     return (
        <LayoutDefault>
-   
+   <Banner src={src}/>
    <Description
-        src={project.cover}
         alt={project.title}
         title={project.title}
         context={project.context}

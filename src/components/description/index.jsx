@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 import "../../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Description({ src, alt, title, context, tags }) {
+export default function Description({ title, context, tags }) {
   return (
     <section className="projects-description-container">
-      <div className="projects-description-img-container">
-        <img src={src} alt={alt} className="projects-description-img" />
-      </div>
+     
       <div className="about-project">
-        <Link to="https://kasa-iota-flame.vercel.app" className="title-about-project-link">
-        <span className="title-about-project">{title}<FontAwesomeIcon icon="fa-solid fa-link" className="fa-link"/></span>
+        <Link
+          to="https://kasa-iota-flame.vercel.app"
+          className="title-about-project-link"
+        >
+          <span className="title-about-project">
+            {title}
+            <FontAwesomeIcon
+              icon="fa-solid fa-arrow-up-right-from-square"
+              className="fa-link"
+            />
+          </span>
         </Link>
         <p className="context">{context}</p>
         <div className="tags-container">

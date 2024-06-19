@@ -17,7 +17,8 @@ export default function Home() {
     { icon: faFigma, className: "figma-icon" },
   ];
   return (
-    <LayoutDefault page="home">
+    <LayoutDefault>
+      <main className="main-home">
       <section id="about" className="about">
         <div className="about-text">
           <h1>Frontend dev</h1>
@@ -30,7 +31,7 @@ export default function Home() {
         </div>
       </section>
       <section id="outils" className="outils">
-        <h2>Outils</h2>
+        <h2>Compétences</h2>
         <div className="outils-container">
         {icons.map((icon, index) => (
           <Outil key={index} icon={icon.icon} className={icon.className} />
@@ -41,6 +42,7 @@ export default function Home() {
         <h2>Projets</h2>
       <Projects/>
       </section>
+      </main>
     </LayoutDefault>
   );
 }

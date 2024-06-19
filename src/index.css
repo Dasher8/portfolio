@@ -11,6 +11,23 @@ body {
   min-height: 100vh;
 }
 
+.main-home {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-argent {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -61,7 +78,6 @@ li {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  padding: 20px;
 }
 
 .about-photo {

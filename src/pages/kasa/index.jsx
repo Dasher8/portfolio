@@ -5,7 +5,7 @@ import Description from "../../components/description";
 import Banner from "../../components/banner";
 import src from "../../assets/mockup_devices.png";
 import "../../index.css";
-export default function Argent() {
+export default function Kasa() {
   // Select the project with id "1"
   const projectId = "1";
   const project = projects.data.find((proj) => proj.id === projectId);

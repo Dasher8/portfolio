@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/home";
 import Error from "../pages/error";
-import Kasa from "../pages/kasa";
+import Work from "../pages/work";
 
 import "../index.css";
 
@@ -15,7 +15,7 @@ export default function Router() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Error/>}/>
-          <Route path="/kasa" element={<Kasa />} />
+          <Route path="/project/:id" element={<Work />} />
         </Routes>
       </BrowserRouter>
   </React.StrictMode>

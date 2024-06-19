@@ -20,12 +20,13 @@ export default function Projects() {
   return (
     <section className="cards-section">
       <div className="cards-container">
-        {projects.map((item, index) => (
+        {projects.map((project, index) => (
             <Project
               key={index}
-              id={item.id}
-              title={item.title}
-              cover={item.cover}
+              id={project.id}
+              title={project.title}
+              cover={project.cover}
+              alt={project.title}
             />
         ))}
       </div>

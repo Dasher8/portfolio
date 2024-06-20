@@ -1,26 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SocialLink from "../social";
+import {
+  faGithub,
+  faSquareBehance,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
     <div className="footer">
       <div className="socials" id="contact">
-        <Link to="https://github.com/Dasher8" aria-label="GitHub Profile">
-          <FontAwesomeIcon icon="fa-brands fa-github" className="social-icon" />
-        </Link>
-        <Link to="https://www.behance.net/dariatopor" aria-label="Behance Profile">
-          <FontAwesomeIcon
-            icon="fa-brands fa-square-behance"
-            className="social-icon"
-          />
-        </Link>
-        <Link to="https://www.linkedin.com/in/dariatopor/" aria-label="Linkedin Profile">
-          <FontAwesomeIcon
-            icon="fa-brands fa-linkedin"
-            className="social-icon"
-          />
-        </Link>
+        <SocialLink
+          url="https://github.com/Dasher8"
+          icon={faGithub}
+          ariaLabel="GitHub Profile"
+        />
+        <SocialLink
+          url="https://www.behance.net/dariatopor"
+          icon={faSquareBehance}
+          ariaLabel="Behance Profile"
+        />
+        <SocialLink
+          url="https://www.linkedin.com/in/dariatopor/"
+          icon={faLinkedin}
+          ariaLabel="Linkedin Profile"
+        />
       </div>
     </div>
   );

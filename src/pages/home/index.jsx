@@ -12,9 +12,21 @@ import {
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 import Projects from "../../containers/projects";
-import daria from "../../assets/daria.png";
 
+import About from "../../components/about";
 export default function Home() {
+
+  const text =
+  (
+    <div>
+      Bonjour, c'est Daria.
+      <br />
+      Je suis développeuse front-end, précédemment designer graphique et photographe.
+      <br />
+      Mon expérience en tant que designer graphique et photographe enrichit ma compréhension du web design et m'aide à apporter une touche créative à mes projets ainsi qu'à créer des interfaces utilisateur à la fois fonctionnelles et esthétiques.
+    </div>
+  );
+
   const icons = [
     { icon: faReact, className: "react-icon" },
     { icon: faJs, className: "js-icon" },
@@ -29,15 +41,9 @@ export default function Home() {
     <LayoutDefault>
       <main className="main-home">
         <section id="about" className="about">
-          <div className="daria">
+          <div className="">
             <h1>Présentation</h1>
-            <img
-              className="daria-img"
-              src={daria}
-              alt="Bonjour, c'est Daria !
-Je suis développeuse front-end, précédemment designer graphique et photographe.
-Mon expérience en tant que designer graphique et photographe enrichit ma compréhension du web design et m'aide à apporter une touche créative à mes projets ainsi qu'à créer des interfaces utilisateur à la fois fonctionnelles et esthétiques."
-            />
+            <About text={text}/>
           </div>
         </section>
         <section id="outils" className="outils">

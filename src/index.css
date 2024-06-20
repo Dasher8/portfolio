@@ -29,6 +29,27 @@ h2 {
   margin: 10px;
 }
 
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  height: 80vh;
+  max-height: 100vh;
+}
+
+#error-title {
+  font-size: 150px;
+}
+
+#error-text {
+  font-size: 36px;
+}
+
+.return-link {
+  text-decoration: underline;
+}
+
 .main-home {
   margin: 0 50px;
   display: flex;
@@ -384,6 +405,14 @@ li:last-child {
     font-size: 24px;
   }
 
+  #error-title {
+    font-size: 100px;
+  }
+
+  #error-text {
+    font-size: 26px;
+  }
+
   .daria-text {
     font-size: 14px;
     font-weight: 600;
@@ -412,10 +441,8 @@ li:last-child {
     text-decoration: none;
   }
 
-  .main-home {
-    margin: 0 10px;
-  }
-
+  .main-home,
+  .error-page,
   .main-argent {
     margin: 0 10px;
   }

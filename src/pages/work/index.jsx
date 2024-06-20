@@ -42,6 +42,7 @@ export default function Work() {
           alt={project.title}
           title={project.title}
           context={project.context}
+          url={project.url}
           tags={project.tags}
         />
       </main>

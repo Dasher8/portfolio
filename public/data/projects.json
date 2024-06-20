@@ -6,6 +6,7 @@
 		"title": "Kasa",
 		"context": "Pour Kasa, un leader français de la location d'appartements entre particuliers, j'ai participé à la refonte complète de leur site web en utilisant React et NodeJS.\nJ'ai développé le front-end selon les maquettes Figma, en intégrant des composants React, des animations CSS, et en initialisant l'application avec Create React App.\nJ'ai configuré la navigation entre les pages avec React Router et stylisé l'interface avec Sass.\nCe projet a démontré ma capacité à gérer une refonte complète et à travailler efficacement avec des designs réactifs.",
 		"url":"https://kasa-iota-flame.vercel.app/",
+        "image": "/../../assets/mockup_devices.png",
         "tags": [
             "Git",
             "CSS",
@@ -29,6 +30,7 @@
             "title": "Ohmyfood",
             "context": "En tant que développeur junior chez Ohmyfood, une startup en restauration, j'ai développé un site mobile-first répertoriant les menus de restaurants gastronomiques. Le site permet aux clients de composer leurs repas à l'avance, réduisant ainsi les temps d'attente au restaurant.Pour ce projet, j'ai intégré des maquettes mobile et desktop fournies via Figma, en assurant un design responsive. J'ai utilisé Sass pour styliser le site et implémenté des animations CSS pour enrichir l'expérience utilisateur. J'ai également versionné le projet avec Git et GitHub. Ce projet m'a permis de maîtriser l'intégration mobile-first, les animations CSS, et la gestion de version avec Git.",
             "url":"https://p4-oh-my-food-xi.vercel.app/",
+            "image": "../assets/mockup_devices.png",
             "tags": [
                 "Git",
                 "CSS",
@@ -49,6 +51,7 @@
                 "title": "ArgentBank",
                 "context": "Dans ce projet chez ArgentBank, une nouvelle banque en ligne, j'ai développé le front-end d'une application web utilisant React et Redux pour créer une interface utilisateur réactive et dynamique. Voici ce que j'ai appris et accompli :Intégration avec le back-end via des appels API : J'ai écrit des appels à l'API REST pour connecter le front-end au back-end, assurant ainsi une communication fluide entre le client et le serveur.Développement de l'interface utilisateur avec React : J'ai utilisé React pour créer un tableau de bord complet et responsive pour les utilisateurs. Cela incluait des pages d'accueil, de connexion et de profil, en respectant des bonnes pratiques de Green Code pour optimiser les images et créer des composants réutilisables.Gestion des données avec Redux : J'ai implémenté Redux pour gérer l'état global de l'application, facilitant ainsi la gestion des données utilisateur et des états de connexion.Utilisation de Swagger pour modéliser les routes API : J'ai contribué à la modélisation des routes API pour les transactions en utilisant Swagger. Cela a permis de décrire les endpoints nécessaires, tout en suivant les bonnes pratiques de documentation d'API.",
                 "url":"https://github.com/Dasher8/ArgentBank-website",
+                "image": "/../../assets/argent.jpg",
                 "tags": [
                     "Git",
                     "React",

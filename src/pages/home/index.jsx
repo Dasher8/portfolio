@@ -41,7 +41,7 @@ export default function Home() {
     <LayoutDefault>
       <main className="main-home">
         <section id="about" className="about">
-          <div className="">
+          <div>
             <h1>Présentation</h1>
             <About text={text}/>
           </div>

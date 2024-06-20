@@ -6,9 +6,9 @@ import Banner from "../../components/banner";
 
 import "../../index.css";
 
-import projectImage1 from "../../assets/mockup_devices.png";
-import projectImage2 from "../../assets/ohmyfoodt_mockup_devices.png";
-import projectImage3 from "../../assets/argent_mockup_devices.png";
+import projectImage1 from "../../assets/mockup_devices.webp";
+import projectImage2 from "../../assets/ohmyfoodt_mockup_devices.webp";
+import projectImage3 from "../../assets/argent_mockup_devices.webp";
 
 export default function Work() {
   const { id } = useParams();

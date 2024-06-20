@@ -4,9 +4,9 @@ import "../../index.css";
 
 import Project from "../../components/project/index";
 
-import projectImage1 from "../../assets/kasa_mobile_mockup.png";
-import projectImage2 from "../../assets/ohmyfood_desktop_mockup.png";
-import projectImage3 from "../../assets/argentbank_ipad.png";
+import projectImage1 from "../../assets/kasa_mobile_mockup.webp";
+import projectImage2 from "../../assets/ohmyfood_desktop_mockup.webp";
+import projectImage3 from "../../assets/argentbank_ipad.webp";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);

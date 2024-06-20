@@ -143,7 +143,7 @@ svg {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(44, 62, 80);
 }
 
 .active-link:hover {
@@ -352,6 +352,10 @@ li:last-child {
     font-size: 24px;
   }
 
+  .active-link:hover {
+    text-decoration: none;
+  }
+
   .main-home {
     margin: 0 10px;
   }
@@ -447,6 +451,10 @@ li:last-child {
   .cards-container {
     flex-direction: column;
     height: 100%;
+  }
+
+  .active-link:hover {
+    text-decoration: none;
   }
 
   .card {

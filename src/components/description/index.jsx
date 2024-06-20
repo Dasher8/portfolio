@@ -7,12 +7,7 @@ export default function Description({ title, context, url, tags }) {
   return (
     <section className="projects-description-container">
       <div className="about-project">
-      <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="title-about-project-link"
-        >
+        <a href={url} className="title-about-project-link">
           <span className="title-about-project">
             {title}
             <FontAwesomeIcon

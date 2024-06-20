@@ -6,16 +6,16 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="socials" id="contact">
-        <Link to="https://github.com/Dasher8">
+        <Link to="https://github.com/Dasher8" aria-label="GitHub Profile">
           <FontAwesomeIcon icon="fa-brands fa-github" className="social-icon" />
         </Link>
-        <Link to="https://www.behance.net/dariatopor">
+        <Link to="https://www.behance.net/dariatopor" aria-label="Behance Profile">
           <FontAwesomeIcon
             icon="fa-brands fa-square-behance"
             className="social-icon"
           />
         </Link>
-        <Link to="https://www.linkedin.com/in/dariatopor/">
+        <Link to="https://www.linkedin.com/in/dariatopor/" aria-label="Linkedin Profile">
           <FontAwesomeIcon
             icon="fa-brands fa-linkedin"
             className="social-icon"

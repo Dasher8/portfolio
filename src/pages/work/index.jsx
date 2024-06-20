@@ -6,10 +6,6 @@ import Banner from "../../components/banner";
 
 import "../../index.css";
 
-import projectImage1 from "../../assets/mockup_devices.webp";
-import projectImage2 from "../../assets/ohmyfoodt_mockup_devices.webp";
-import projectImage3 from "../../assets/argent_mockup_devices.webp";
-
 export default function Work() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -23,21 +19,7 @@ export default function Work() {
         if (data && Array.isArray(data.data)) {
           const selectedProject = data.data.find((proj) => proj.id === id);
           if (selectedProject) {
-            let cover;
-            switch (selectedProject.id) {
-              case "1":
-                cover = projectImage1;
-                break;
-              case "2":
-                cover = projectImage2;
-                break;
-              case "3":
-                cover = projectImage3;
-                break;
-              default:
-                cover = null;
-            }
-            setProject({ ...selectedProject, cover });
+            setProject(selectedProject);
           } else {
             navigate("/error");
           }
@@ -51,7 +33,7 @@ export default function Work() {
   return (
     <LayoutDefault>
       <main className="main-argent">
-        <Banner src={project.cover} />
+        <Banner src={project.image} />
         <Description
           alt={project.title}
           title={project.title}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
   return (
@@ -12,14 +13,9 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#projects" className="active-link">
-              Projets
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="active-link">
+            <HashLink smooth to="#contact" className="active-link">
               Contact
-            </a>
+            </HashLink>
           </li>
         </ul>
       </nav>

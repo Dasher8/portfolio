@@ -6,8 +6,8 @@
 		"title": "Kasa",
 		"context": "Pour Kasa, un leader français de la location d'appartements entre particuliers, j'ai participé à la refonte complète de leur site web en utilisant React et NodeJS.\nJ'ai développé le front-end selon les maquettes Figma, en intégrant des composants React, des animations CSS, et en initialisant l'application avec Create React App.\nJ'ai configuré la navigation entre les pages avec React Router et stylisé l'interface avec Sass.\nCe projet a démontré ma capacité à gérer une refonte complète et à travailler efficacement avec des designs réactifs.",
 		"url":"https://kasa-iota-flame.vercel.app/",
-        "image": "/public/assets/mockup_devices.png",
-        "cover": "/public/assets/kasa_mobile_mockup.png",
+        "image": "/assets/mockup_devices.png",
+        "cover": "/assets/kasa_mobile_mockup.png",
         "tags": [
             "Git",
             "CSS",

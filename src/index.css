@@ -200,6 +200,10 @@ a {
   color: rgb(44, 62, 80);
 }
 
+.active-link {
+  font-size: 22px;
+}
+
 .active-link:hover {
   text-decoration: underline;
 }
@@ -526,6 +530,10 @@ li:last-child {
     margin: 5px 20px;
     top: 0;
     left: 0;
+  }
+
+  .active-link {
+    font-size: 18px;
   }
 
   .active-link:hover {

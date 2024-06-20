@@ -4,7 +4,6 @@ import Outil from "../../components/outil";
 import { useState, useEffect } from "react";
 import Projects from "../../containers/projects";
 import iconMap from "../../iconImports";
-
 import About from "../../components/about";
 export default function Home() {
 

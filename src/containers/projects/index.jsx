@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import "../../index.css";
-
 import Project from "../../components/project/index";
 
 export default function Projects() {

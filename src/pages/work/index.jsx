@@ -3,16 +3,17 @@ import LayoutDefault from "../../layouts/default";
 import { useParams, useNavigate } from "react-router-dom";
 import Description from "../../components/description";
 import Banner from "../../components/banner";
+import Loader from "../../components/loader";
 
-import "../../index.css";
 
 export default function Work() {
   const { id } = useParams();
   const navigate = useNavigate();
-
   const [project, setProject] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(true); // Start loading
     fetch("/data/projects.json")
       .then((response) => response.json())
       .then((data) => {
@@ -21,14 +22,15 @@ export default function Work() {
           if (selectedProject) {
             setProject(selectedProject);
           } else {
-            navigate("/error");
+            navigate("/error"); // Navigate to error page if project is not found
           }
         }
+        setIsLoading(false); // Finish loading
       });
   }, [id, navigate]);
 
-  if (!project) {
-    return <div>Project not found</div>;
+  if (isLoading) {
+    return <Loader />;
   }
   return (
     <LayoutDefault>

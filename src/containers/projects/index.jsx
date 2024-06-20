@@ -4,10 +4,6 @@ import "../../index.css";
 
 import Project from "../../components/project/index";
 
-import projectImage1 from "../../assets/kasa_mobile_mockup.webp";
-import projectImage2 from "../../assets/ohmyfood_desktop_mockup.webp";
-import projectImage3 from "../../assets/argentbank_ipad.webp";
-
 export default function Projects() {
   const [projects, setProjects] = useState([]);
 
@@ -15,20 +11,9 @@ export default function Projects() {
     fetch("/data/projects.json")
       .then((response) => response.json())
       .then((data) => {
-        // Ajouter les images locales aux données du projet
-        const projectsWithImages = data.data.map((project) => {
-          switch (project.id) {
-            case "1":
-              return { ...project, cover: projectImage1 };
-            case "2":
-              return { ...project, cover: projectImage2 };
-            case "3":
-              return { ...project, cover: projectImage3 };
-            default:
-              return project;
-          }
-        });
-        setProjects(projectsWithImages);
+        if (data && Array.isArray(data.data)) {
+          setProjects(data.data);
+        }
       });
   }, []);
 

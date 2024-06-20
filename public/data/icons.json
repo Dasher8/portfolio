@@ -1,0 +1,12 @@
+{
+    "data": [
+      { "icon": "faReact", "className": "react-icon" },
+      { "icon": "faJs", "className": "js-icon" },
+      { "icon": "faHtml5", "className": "html5-icon" },
+      { "icon": "faCss3Alt", "className": "css3-icon" },
+      { "icon": "faSass", "className": "sass-icon" },
+      { "icon": "faGithub", "className": "github-icon" },
+      { "icon": "faGit", "className": "git-icon" },
+      { "icon": "faFigma", "className": "figma-icon" }
+    ]
+  }

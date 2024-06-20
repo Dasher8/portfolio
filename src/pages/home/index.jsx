@@ -1,17 +1,9 @@
 import React from "react";
 import LayoutDefault from "../../layouts/default";
 import Outil from "../../components/outil";
-import {
-  faReact,
-  faJs,
-  faHtml5,
-  faCss3Alt,
-  faSass,
-  faGithub,
-  faGit,
-  faFigma,
-} from "@fortawesome/free-brands-svg-icons";
+import { useState, useEffect } from "react";
 import Projects from "../../containers/projects";
+import iconMap from "../../iconImports";
 
 import About from "../../components/about";
 export default function Home() {
@@ -27,16 +19,20 @@ export default function Home() {
     </div>
   );
 
-  const icons = [
-    { icon: faReact, className: "react-icon" },
-    { icon: faJs, className: "js-icon" },
-    { icon: faHtml5, className: "html5-icon" },
-    { icon: faCss3Alt, className: "css3-icon" },
-    { icon: faSass, className: "sass-icon" },
-    { icon: faGithub, className: "github-icon" },
-    { icon: faGit, className: "git-icon" },
-    { icon: faFigma, className: "figma-icon" },
-  ];
+  const [icons, setIcons] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/icons.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const resolvedIcons = data.data.map((icon) => ({
+          icon: iconMap[icon.icon],
+          className: icon.className
+        }));
+        setIcons(resolvedIcons);
+      });
+  }, []);
+
   return (
     <LayoutDefault>
       <main className="main-home">

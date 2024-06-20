@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="socials">
+      <div className="socials" id="contact">
         <Link to="https://github.com/Dasher8">
           <FontAwesomeIcon icon="fa-brands fa-github" className="social-icon" />
         </Link>

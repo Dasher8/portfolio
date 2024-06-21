@@ -9,7 +9,7 @@ export default function Home() {
 
   const text =
   (
-    <div>
+    <>
   Bonjour, c'est Daria.
   <br />
   Je suis développeuse front-end, précédemment designer graphique et photographe.
@@ -17,7 +17,7 @@ export default function Home() {
   Mon expérience en tant que designer graphique et photographe enrichit ma compréhension du web design et m'aide à apporter une touche créative à mes projets ainsi qu'à créer des interfaces utilisateur à la fois fonctionnelles et esthétiques.
   <br />
   Je travaille avec React et JavaScript pour développer des applications web dynamiques et interactives.
-</div>
+</>
   );
 
   const [icons, setIcons] = useState([]);

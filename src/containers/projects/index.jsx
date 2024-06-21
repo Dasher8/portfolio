@@ -25,6 +25,7 @@ export default function Projects() {
             title={project.title}
             cover={project.cover}
             alt={project.title}
+            loading="lazy"
           />
         ))}
       </div>

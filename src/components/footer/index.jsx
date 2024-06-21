@@ -1,10 +1,6 @@
 import React from "react";
 import SocialLink from "../social";
-import {
-  faGithub,
-  faSquareBehance,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import iconMap from "../../iconImports";
 
 export default function Footer() {
   return (
@@ -12,17 +8,17 @@ export default function Footer() {
       <div className="socials" id="contact">
         <SocialLink
           url="https://github.com/Dasher8"
-          icon={faGithub}
+          icon={iconMap.faGithub}
           ariaLabel="GitHub Profile"
         />
         <SocialLink
           url="https://www.behance.net/dariatopor"
-          icon={faSquareBehance}
+          icon={iconMap.faSquareBehance}
           ariaLabel="Behance Profile"
         />
         <SocialLink
           url="https://www.linkedin.com/in/dariatopor/"
-          icon={faLinkedin}
+          icon={iconMap.faLinkedin}
           ariaLabel="Linkedin Profile"
         />
       </div>
